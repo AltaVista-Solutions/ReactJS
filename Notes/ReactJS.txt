@@ -1,0 +1,70 @@
+React JS:
+----------
+-It is a open source library for building User Interfaces
+-It is not a Framework
+-It is Introduced by Facebook/Meta
+-It has a huge community
+-It will use Component Based Architecture
+-It supports reusable code
+-React is Declarative
+-React will render components effectively
+-DOM updates will be handled by React
+-React Native for native mobile application development
+-prerequisites for react are HTML,CSS,JavaScript and Modern JavaScript(ES6/ES7)
+-Fundamentals,HTTP,Routing,Redux and Utilities
+-React will use eco sysytem of Node JS
+-we can download node js from "www.nodejs.org"
+- https://nodejs.org/dist/v20.10.0/node-v20.10.0-x64.msi
+-NPM Node Package Manager
+
+Create First React APP:
+----------------------
+npm install create-react-app
+
+npx create-react-app project-01
+
+cd project-01
+
+npm start
+
+Extension for VS Code:
+----------------------
+	ES7+ React/Redux/React-Native snippets
+
+Components in React:
+------------------
+-Components are building blocks of any react app
+-Components are part of UI
+-In React template, the root component is named as 'APP'
+-Components are reusable
+-Components can be nested(one component can render inside another components)
+-The extension of React components will be *.js or *.jsx
+-Every component file name should start with a capital letter.
+-There are 2 types of components available
+	1.Functional Components
+	2.Class Components
+
+
+1.Functional Components:[rfce/rafce]
+-----------------------
+-These are simply javascript functions
+-These will optionally receive object of properties(props)
+-These will return HTML content as UI (Known as JSX)
+-Functional Components will Accept Props and Returns JSX
+
+2.Class Components:[rce]
+-------------------
+-These are ES6/7 Classes
+-Class components also will recive optionally an object of properties (props)
+-These also will return HTML as UI(JSX)
+-Additionally Class components will maintain a private object memory called 'state'
+
+
+
+
+
+
+
+
+
+

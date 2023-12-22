@@ -1,0 +1,9 @@
+.online{
+    color:green;
+    font-size: 36px;
+}
+
+.offline{
+    color:red;
+    font-size: 42px;
+}

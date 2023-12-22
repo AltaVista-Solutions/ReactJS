@@ -60,6 +60,17 @@ Components in React:
 -Additionally Class components will maintain a private object memory called 'state'
 
 
+Props:
+-----
+-Props is a object of properties
+
+State:
+------
+-It will be active in class components
+-It is a private object memory
+-Can be Initialised in only Constructors of the class
+
+
 
 
 

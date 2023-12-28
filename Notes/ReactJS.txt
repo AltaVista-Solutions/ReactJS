@@ -71,6 +71,90 @@ State:
 -Can be Initialised in only Constructors of the class
 
 
+Life Cycle Hooks in React:
+-------------------------
+1.Mounting:
+*************
+-when an instance of a component is being created and inserted into the DOM.
+
+constructor():
+------------
+  It is a special type member function which gets called whenever a new component is created.
+  It will be used to Initialize the state
+  It will directly override this.state
+  Props will be sent to parent class(Component) from construtor using Super(props)
+
+static getDerivedStateFromProps():
+----------------------------------
+  It will be triggered when the component is depends on the changes
+  It will be directly change the state values without using setState()
+
+render():
+--------
+  This is the only required method
+  Reads props&state and returns JSX
+  Children Component life cycle will start from here
+  We can not set the state inside render
+
+componentDidMount():
+--------------------
+  Invoked immediately after component and its child components have been rendered in DOM
+  This will be used to perform AJAX/API calls
+  
+
+*********
+Updating:
+*********
+static getDerivedStateFromProps():
+----------------------------------
+  It will be triggered when the component is depends on the changes
+  It will be directly change the state values without using setState()
+
+shouldComponentUpdate(nextProps,nextState):
+-------------------------------------------
+  Dictates if the component should re-render or not
+  It will be used for performance optimisation
+  
+render():
+--------
+  This is the only required method
+  Reads props&state and returns JSX
+  Children Component life cycle will start from here
+  We can not set the state inside render
+
+getSnapshotBeforeUpdate(prevProps,prevState):
+--------------------------------------------
+  This can be called right before the changes from the Virtual DOM are reflecting the DOM
+  We can Capture old values from state/props before they get changed
+  this method will wither return null or a snapshot of previous values
+
+componentDidUpdate(prevProps,prevState,snapshot)
+-------------------------------------------------
+  This method will be called after the render finished its re-render cycles
+
+  
+*************
+UnMounting
+***************
+-When ever a component is removed from the DOM
+
+componentWillUnmount():
+-----------------------
+  This method will be invoked right before component is unmounted and destroyed
+  It will be useful for cancelling any network requests,removing event handlers,cancelling any subscriptions
+  we can not change the state
+
+**************
+ErrorHandling:
+**************
+  When there is an error either during rendering,in a life cycle method or in constructor or in any child component then the component will under go into error handling phase
+
+static getDerivedStateFromError(error)
+componentDidCatch(error,info)
+
+
+
+
 
 
 

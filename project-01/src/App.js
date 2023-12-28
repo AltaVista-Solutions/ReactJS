@@ -22,6 +22,9 @@ import CRender4 from './Components/08_ConditionalRendering/CRender4';
 import Array1 from './Components/09_Map/Array1';
 import Array2 from './Components/09_Map/Array2';
 import CSSDemo1 from './Components/10_CSSStyles/CSSDemo1';
+import BasicForm from './Components/11_BasicFormHandling/BasicForm';
+import Form from './Components/11_BasicFormHandling/Form';
+import ComponentA from './Components/12_LifeCycleHooks/ComponentA';
 
 function App() {
   return (
@@ -59,7 +62,10 @@ function App() {
       {/* <CRender4/> */}
       {/* <Array1/> */}
       {/* <Array2/> */}
-      <CSSDemo1/>
+      {/* <CSSDemo1/> */}
+      {/* <BasicForm/> */}
+      {/* <Form/> */}
+      <ComponentA/>
     </div>
   );
 }

@@ -25,6 +25,15 @@ import CSSDemo1 from './Components/10_CSSStyles/CSSDemo1';
 import BasicForm from './Components/11_BasicFormHandling/BasicForm';
 import Form from './Components/11_BasicFormHandling/Form';
 import ComponentA from './Components/12_LifeCycleHooks/ComponentA';
+import Table from './Components/13_Fragments/Table';
+import RegularComponent from './Components/14_PureComponents/RegularComponent';
+import PureComponentDemo from './Components/14_PureComponents/PureComponentDemo';
+import MParent from './Components/15_MemoComponents/MParent';
+import RefDemo from './Components/16_Refs/RefDemo';
+import FRParent from './Components/16_Refs/FRParent';
+import PortalsDemoComponent from './Components/17_Portals/PortalsDemoComponent';
+import ProductComponent from './Components/18_ErrorHandling/ProductComponent';
+import ErrorHandler from './Components/18_ErrorHandling/ErrorHandler';
 
 function App() {
   return (
@@ -65,8 +74,27 @@ function App() {
       {/* <CSSDemo1/> */}
       {/* <BasicForm/> */}
       {/* <Form/> */}
-      <ComponentA/>
-    </div>
+      {/* <ComponentA/> */}
+      {/* <Table/> */}
+      {/* <RegularComponent/>
+      <PureComponentDemo/> */}
+      {/* <MParent/> */}
+      {/* <RefDemo/> */}
+      {/* <FRParent/> */}
+      {/* <PortalsDemoComponent/> */}
+
+<ErrorHandler> 
+    <ProductComponent name="Iphone 13 Mini" category="Electronics"/>
+</ErrorHandler>
+  <ProductComponent name="Samsung S23 FE" category="Electronics"/>
+<ErrorHandler> 
+  <ProductComponent name="Dell Latitude E5269" category="Electronics"/> 
+</ErrorHandler>
+<ErrorHandler> 
+  <ProductComponent name="Swift DZire" category="Automobiles"/>
+</ErrorHandler>
+
+ </div>
   );
 }
 

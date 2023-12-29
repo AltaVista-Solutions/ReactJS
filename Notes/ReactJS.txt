@@ -153,13 +153,40 @@ static getDerivedStateFromError(error)
 componentDidCatch(error,info)
 
 
+Fragments:
+----------
+-Fragment is a concept of removing unnecessary elements inside the DOM Structure
+-Fragments can be created using the syntax 'React.Fragment'
+
+Pure Components:
+----------------
+-Normal Component Classes will be inheriting/extending 'Component' Class
+-Pure Component Classes will be inheriting/extending 'PureComponent' Class
+-When Ever there is no change in the state/props then component will not be allowed to re-rendered if we are inheriting with PureComponent classes
 
 
+Memo Components:
+----------------
+-It is exactly similar to pure component implementation in react functional components
 
+Refs in React:
+-------------
+-Refs provides a way to access DOM nodes
+-Refs can be created by using React.createRef()
 
+Portals in React:
+----------------
+-Portals will be used to inject the DOM into a custom tag
 
+Error Handling:
+---------------
 
+npm run build
+npm i -g serve
+npx serve -s build
 
-
-
+Routing:
+----------
+npm i react-router-dom
+BrowserRouter,Routes,Route
 

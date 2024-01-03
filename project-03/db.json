@@ -1,0 +1,26 @@
+{
+  "posts": [
+    {
+      "first_name": "Hari",
+      "last_name": "Krishna",
+      "email": "test@gmail.com",
+      "id": 2
+    },
+    {
+      "first_name": "Michael",
+      "last_name": "Jogn",
+      "email": "testabc@gmail.com",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "first_name": "Emma",
+      "last_name": "Tim",
+      "email": "emmatim4@gmail.com"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
